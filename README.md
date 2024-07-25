@@ -8,6 +8,9 @@ Just once install and init:
 pnpm install --save-dev @jnxplus/nx-maven
 nx generate @jnxplus/nx-maven:init
 
+Add a maven application:
+nx generate @jnxplus/nx-maven:application nxsampleapp --javaVersion 17 --groupId ch.inss --language java --framework spring-boot --directory apps
+
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 

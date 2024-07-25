@@ -2,7 +2,11 @@
   "name": "@nxsample/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "buildall": "nx run-many -t build lint test --no-cloud ",
+    "build": "nx affected --parallel=2 --verbose=false -t build --no-cloud ",
+    "clean": "nx run-many -t clean --no-cloud "
+  },
   "private": true,
   "dependencies": {
     "react": "18.3.1",
